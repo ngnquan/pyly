@@ -10,9 +10,6 @@ def convert_pts_to_2pt(lst_points):
 
     return (x1, y1, x2, y2)
 
-def common_elements(range_1, range_2):
-    return [element for element in range_1 if element in range_2]
-
 def ensure_2pt(bbox):
     if all([isinstance(p, int) or isinstance(p, float) for p in bbox]):
         return bbox
